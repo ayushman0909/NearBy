@@ -1,4 +1,4 @@
-import ItemContainer from "../item-Container/ItemContainer";
+import ItemContainer from "../itemContainer/ItemContainer";
 
 const Notes = () => {
   const AllFilters = [

@@ -6,19 +6,20 @@ import HomePage from "./components/HomePage/HomePage"
 import Books from "./components/Books/Books"
 import Notes from "./components/Notes/Notes"
 import Subscriptions from "./components/Subscriptions/Subscriptions"
-import StudyKits from "./components/Study Kits/StudyKits"
+import StudyKits from "./components/StudyKits/StudyKits.jsx"
 import Donate from "./components/Donate/Donate"
-import ExploreMore from "./components/Explore More/ExploreMore"
-import Sell from "./components/Sell Your Study Material/Sell"
+import ExploreMore from "./components/ExploreMore/ExploreMore"
+import Sell from "./components/SellYourStudyMaterial/Sell"
 import Cart from "./components/Cart/Cart"
 import LoginRegister from "./components/Login/LoginRegister.jsx";
 import { Navigate } from "react-router";
 import Footer from "./components/partials/Footer";
-import SellBookForm from "./components/Sell Your Study Material/SellBookForm.jsx";
-import SellNotesForm from "./components/Sell Your Study Material/SellNotesForm.jsx";
-import SellSubscriptionsForm from "./components/Sell Your Study Material/SellSubscriptionsForm.jsx";
-import SellStudyKitsForm from "./components/Sell Your Study Material/SellStudyKitsForm.jsx";
-import EachItemDetails from "./components/item-Container/EachItemDetails.jsx";
+import SellBookForm from "./components/SellYourStudyMaterial/SellBookForm.jsx";
+import SellNotesForm from "./components/SellYourStudyMaterial/SellNotesForm.jsx";
+import SellSubscriptionsForm from "./components/SellYourStudyMaterial/SellSubscriptionsForm.jsx";
+import SellStudyKitsForm from "./components/SellYourStudyMaterial/SellStudyKitsForm.jsx";
+
+import EachItemDetails from "./components/itemContainer/EachItemDetails.jsx"
 const App = () => {
   return (
     <div className="main">

@@ -3,7 +3,7 @@ import styles from "../../Css/Homepage/homepage.module.css"
 import btnstyle from "../../Css/Homepage/herosection.module.css"
 import Herosection1 from "../../assets/donate1.png"
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
-import AllitemsContainer from "../item-Container/AllitemsContainer";
+import AllitemsContainer from "../itemContainer/AllitemsContainer";
 
 
 const Donate = () => {
