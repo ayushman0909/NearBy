@@ -1,0 +1,101 @@
+.LoginRegisterPage{
+  padding: 2vw 4vh;
+  background-color: rgb(236, 236, 236);
+  min-height: 80vh;
+  display: grid;
+ 
+ 
+}
+.formContainer{
+  padding: 10px;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+
+   margin: auto;
+
+}
+.formSubContainer{
+  /* background-color: yellow; */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 60vh;
+font-weight: 550;
+ 
+}
+
+.formSubContainer1{
+ max-width: 350px;
+  width: 50%;
+ color: white;
+background-color: #2874f0;
+position: relative;
+overflow: hidden;
+}
+.formSubContainer1 img{
+  position: absolute;
+  width: 80%;
+  bottom: 0;
+}
+
+
+ .LoginRegisterPage  form{
+  /* background-color: rgb(68, 68, 66); */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.LoginRegisterPage form div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.LoginRegisterPage form input{
+  min-width: 250px;
+  border: none;
+ 
+  padding: 10px 20px;
+ font-size: clamp(1rem,1.5vw,2rem);
+
+}
+.LoginRegisterPage input:focus {
+  outline: none;
+  box-shadow: none;
+  border-bottom: 1px solid rgb(0, 50, 107);
+}
+.formButton p{
+  font-size: 0.8rem;
+  color: rgba(0,0,0,0.7);
+}
+.LoginRegisterPage button{
+ 
+ font-weight: 550;
+ padding: 15px 20px;
+ border-radius: 5px;
+ cursor: pointer;
+ background-color: orangered;
+ color: white;
+ border: none;
+ transition: 0.2s ease-in;
+ &:hover{
+ background-color: rgb(175, 49, 3);
+
+ }
+}
+.newRegister{
+  margin: 10px auto;
+}
+.newRegister p{
+  text-decoration: none;
+  font-weight: 560;
+  color:  #2874f0;
+  cursor: pointer;
+}
+
+@media screen  and (max-width:789px){
+  .formSubContainer1{
+    display: none;
+  }
+}

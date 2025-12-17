@@ -1,0 +1,223 @@
+.HowItWorks {
+  height: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-top: 40px;
+  
+
+}
+.HowItWorks-mainheading{
+  display: block;
+  color: black;
+  font-variant: small-caps;
+  padding: 0 0 0 30px;
+  font-size: clamp(1rem,2.5vw,5rem);
+  
+  
+
+}
+.CircularHowItWorksContainer {
+  width: 100%;
+  /* background-color: blue; */
+  background-image: url(../../assets/herosection4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: inherit;
+  padding: 7rem;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.CircularHowItWorks-line {
+  width: 40vw;
+  height: 40vw;
+  /* border: 2px solid #E0E0E0 ; */
+  border-radius: 50%;
+  position: relative;
+  font-size: clamp(0.9rem,1vw,2rem);
+
+
+  /* padding: 60px; */
+   background: radial-gradient(circle at center,
+      #910953 0%,
+      #4e0777 70%,
+      #200000 100%
+  );
+}
+.HowItWorks-heading {
+  position: absolute;
+  color: white;
+  left: 50%;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-variant: small-caps;
+  font-size: clamp(00.75rem,1.5vw,2rem);
+
+}
+
+.activeanimation {
+  animation: rotateCircle 18s linear infinite;
+}
+.HowItWorks-steps {
+  background-color: yellow;
+}
+.step {
+  position: absolute;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: 0.3s ease-in-out;
+  color: rgb(17, 17, 17);
+  font-weight: 700;
+}
+
+.step-top {
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  /* animation: uprightcard 18s linear infinite; */
+  background-color: rgb(255, 255, 119);
+  &:hover {
+    transform: translateX(-50%) translateY(-50%) scale(1.07);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.step-right {
+  transform: translateX(50%) translateY(-50%);
+  right: 0;
+  top: 50%;
+  background-color: skyblue;
+  &:hover {
+    transform: translateX(50%) translateY(-50%) scale(1.07);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+  }
+}
+.step-bottom {
+  bottom: -0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  background-color: rgb(104, 255, 104);
+  &:hover {
+    transform: translateX(-50%) translateY(50%) scale(1.07);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+  }
+}
+
+/* LEFT */
+.step-left {
+  left: 0;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: rgb(255, 194, 80);
+  &:hover {
+    transform: translateX(-50%) translateY(-50%) scale(1.07);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+  }
+}
+.arrow {
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+.arrow svg {
+  font-size: clamp(00.75rem,1.5vw,2rem);
+  transform: scaleX(1.5);
+  color: white;
+  /* transform: rotate(45deg) */
+}
+/* Top → Right */
+.arrow-top-right {
+  top: 15%;
+  right: 15%;
+  transform: rotate(45deg);
+}
+
+/* Right → Bottom */
+.arrow-right-bottom {
+  right: 15%;
+  bottom: 15%;
+  transform: rotate(135deg);
+}
+
+/* Bottom → Left */
+.arrow-bottom-left {
+  bottom: 15%;
+  left: 15%;
+  transform: rotate(225deg);
+}
+
+/* Left → Top */
+.arrow-left-top {
+  left: 15%;
+  top: 15%;
+  transform: rotate(-45deg);
+}
+
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* @keyframes uprightcard {
+     from { transform: translateX(-50%) translateY(-50%) rotate(0deg); }
+  to   { transform: translateX(-50%) translateY(-50%) rotate(-360deg); }
+} */
+
+@media screen and (max-width:789px) {
+   .CircularHowItWorks-line{
+    position: static;
+   display: grid;
+   gap: 20px;
+   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+   justify-content: center;
+   
+    border-radius: 0;
+    width: 100%;
+    animation: none;
+    height: auto;
+  background-color: rgb(255, 255, 255);
+  background: none;
+
+   }
+   .HowItWorks-mainheading{
+    display: block;
+    color: black;
+    /* font-size: clamp(1.5rem,3vw,4.5rem); */
+
+    font-variant: small-caps;
+   }
+   
+   .CircularHowItWorksContainer {
+  width: 100%;
+  padding: 1rem;
+  position: static;
+}
+.step{
+  
+  position: static;
+  transform: translate(0);
+   &:hover {
+    transform: translateX(-2%) translateY(-2%) scale(1.07);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25);
+  }
+
+}
+.arrow{
+  display: none;
+}
+}

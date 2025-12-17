@@ -1,0 +1,119 @@
+.sellPage {
+  min-height: 100vh;
+  background-color: #ececec;
+  padding: 20px;
+}
+.sellNavbar {
+  height: auto;
+  width: 80%;
+  margin: auto;
+  /* background-color: red; */
+  border-radius: 30px;
+}
+.sellNavbar ul {
+ 
+  display: flex;
+  background-color: #b8b8b8;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 10px;
+  border-radius: 30px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.sellNavbar ul li {
+  list-style-type: none;
+  /* background-color: red; */
+
+  border-radius: 20px;
+}
+.sellNavbar ul li a {
+  text-decoration: none;
+  padding: 10px 50px;
+  border-radius: 20px;
+  color: black;
+  font-weight: 600;
+ color: rgb(0, 0, 0);
+  white-space: nowrap;
+  transition: 0.3s ease-in-out;
+}
+.sellNavbar ul li a:hover {
+  background-color: #d6d6d6;
+  color: black;
+}
+.active {
+  background-color: rgb(5, 108, 192) !important;
+  transition: 0.3s ease-in-out;
+  color: white !important;
+}
+.sellForm{
+  width: 80%;
+  background-color: rgb(255, 255, 255);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid black;
+
+}
+.sellForm form{
+  /* background-color: yellow; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 10px;
+
+}
+.sellForm form div{
+  display: flex;
+  flex-direction: column;
+/* background-color: brown; */
+  font-weight: 600;
+  border: 1px solid rgba(0, 0, 0,0.5);
+  padding: 10px;
+  border-radius: 10px;
+
+
+}
+
+.sellForm form div input,.sellForm form div select ,.sellForm form div textarea{
+ 
+  border: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  
+
+}
+.sellForm form div input:focus,.sellForm form div select:focus,.sellForm form div textarea:focus{
+  outline: none;
+  box-shadow: none;
+  border-bottom: 1px solid rgb(0, 50, 107);
+}
+.negotiate{
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  gap: 10px;
+}
+.sellForm .Confirmbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  
+}
+.sellForm button{
+  padding: 10px 20px;
+  width: 50%;
+  border-radius: 20px;
+  font-weight: 600;
+  background-color: orangered;
+  color: white;
+  transition: 0.3s ease-in-out;
+  border: none;
+  &:hover{
+    background-color: rgb(110, 29, 0);
+  }
+}

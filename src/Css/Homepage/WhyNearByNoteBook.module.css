@@ -1,0 +1,62 @@
+
+.WhyNearByNoteBook{
+    margin:20px 0px;
+    background-color: rgb(219, 219, 219);
+    border-radius: 20px;
+}
+
+.WhyNearByNoteBook-heading{
+    padding: 30px;
+    text-align: center;
+    /* background-color: red; */
+    font-size: clamp(1rem,2.5vw,5rem);
+    font-variant: small-caps;
+
+}
+.WhyNearByNoteBook-card-container{
+    /* background-color: #e73bcb; */
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+ 
+    gap: 40px;
+    
+}
+.WhyNearByNoteBookCard{
+    /* background-color: yellowgreen; */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: clamp(0.75rem,1vw,2rem);
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.3);
+
+    &:hover{
+        transform: translateY(-5%);
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.3);
+
+    }
+}
+.WhyNearByNoteBookCard-icon{
+    font-size: clamp(1rem,4vw,8rem);
+    /* border: 1px solid black; */
+    padding: 10px;
+    border-radius: 50%;
+    color: rgb(6, 73, 112);
+    background-color: skyblue;
+}
+
+@media screen  and (max-width:789px){
+    .WhyNearByNoteBook-card-container{
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 10px;
+    
+}
+}
