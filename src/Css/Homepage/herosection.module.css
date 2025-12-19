@@ -3,11 +3,11 @@
 /* hero section starts */
 
 .HeroSection{
- min-height: 60vh;
+ min-height: 50vh;
  /* background-color: green; */
  display: flex;
     margin-bottom: 20px;
- 
+    border-radius: 10px;
 
 }
 .herosection-text{
@@ -17,6 +17,8 @@
     flex-direction: column;
     justify-content: space-evenly;
       z-index: 10;
+    border-radius: 10px;
+
       
 }
 .herosection-text h1{
@@ -101,6 +103,7 @@ button:has(.find-icon){
 @media screen and (max-width:789px) {
    .HeroSection{
     position: relative;
+    border-radius: 10px;
    }
    .herosection-image{
     border-radius: 0;
@@ -115,6 +118,7 @@ button:has(.find-icon){
    flex-direction: column;
    justify-content: center;
    color: white;
+   border-radius: 10px;
    }
    .herosection-text h1{
     /* background-color: violet; */

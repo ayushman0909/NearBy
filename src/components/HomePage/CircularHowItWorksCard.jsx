@@ -12,7 +12,7 @@ const CircularHowItWorksCard = ({ stepsData }) => {
             }
             
 
-            <h1>{step.icon} <br />{step.title}</h1>
+            <h3>{step.icon} <br />{step.title}</h3>
             <p>{step.description}</p>
               
           </div>

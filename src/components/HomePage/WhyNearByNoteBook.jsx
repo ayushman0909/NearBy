@@ -42,9 +42,9 @@ const WhyNearByNoteBook = () => {
 
   return (
     <section className={styles.WhyNearByNoteBook}>
-      <h1 className={styles["WhyNearByNoteBook-heading"]}>
-        ⭐ Why NearByNoteBook? ⭐
-      </h1>
+      <h2 className={styles["WhyNearByNoteBook-heading"]}>
+         Why NearByNoteBook? 
+      </h2>
       <div className={styles["WhyNearByNoteBook-card-container"]}>
         <WhyNearByNoteBookCard cardDetails={cardDetails} />
       </div>

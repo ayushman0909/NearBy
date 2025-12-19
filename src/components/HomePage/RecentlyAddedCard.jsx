@@ -10,7 +10,7 @@ const RecentlyAddedCard = ({ title, CardImg,id,category }) => {
         </div>
 
         <div className={styles["RecentlyAddedCard-details"]}>
-          <h2>card{title}</h2>
+          <h4>card{title}</h4>
           <p>price:</p>
           <p>Category:</p>
         </div>
