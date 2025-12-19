@@ -1,7 +1,7 @@
 import { Outlet } from "react-router"
-import styles from "../../Css/sellPage/SellPage.module.css"
+import styles from "../../Css/SellPage/SellPage.module.css"
 import SellNavbar from "./SellNavbar"
-import SellForm from "./SellBookForm"
+
 
 const Sell = () => {
   return (

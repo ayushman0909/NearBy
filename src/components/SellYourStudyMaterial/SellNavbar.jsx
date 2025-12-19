@@ -1,6 +1,6 @@
 
 import { NavLink } from "react-router"
-import styles from "../../Css/sellPage/SellPage.module.css"
+import styles from "../../Css/SellPage/SellPage.module.css"
 const SellNavbar = () => {
   return (
     <section className={styles["sellNavbar"]}>

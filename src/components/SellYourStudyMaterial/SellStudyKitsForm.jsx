@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from "../../Css/sellPage/SellPage.module.css"
+import styles from "../../Css/SellPage/SellPage.module.css"
 
 const SellStudyKitsForm = () => {
   return (
